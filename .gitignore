@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Viber.Bot.NetCore/v16
+/Viber.Bot.NetCore/obj
