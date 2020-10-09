@@ -31,7 +31,15 @@ namespace Viber.Bot.NetCore.Models
             public WebHookRequest(string url)
             {
                 Url = url;
-                EventTypes = new List<string>();
+                EventTypes = new List<string>()
+                {
+                    ViberEventType.Delivered,
+                    ViberEventType.Seen,
+                    ViberEventType.Failed,
+                    ViberEventType.Subscribed,
+                    ViberEventType.Unsubscribed,
+                    ViberEventType.ConversationStarted
+                };
                 SendName = false;
                 SendPhoto = false;
             }
