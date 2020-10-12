@@ -3,7 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
+    <PackageProjectUrl>https://github.com/yurickas/Viber.Bot.NetCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yurickas/Viber.Bot.NetCore</RepositoryUrl>
+    <PackageTags>viber bot c#</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
