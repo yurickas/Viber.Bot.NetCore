@@ -6,7 +6,7 @@ namespace Viber.Bot.NetCore.Models
 {
     public static class ViberWebHook
     {
-        public class ViberWebHookResponse : ViberApiResponseBase
+        public class ViberWebHookResponse : ViberResponse.ViberApiResponseBase
         {
             [JsonProperty("event_types")]
             public ICollection<string> EventTypes { get; set; }

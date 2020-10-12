@@ -36,7 +36,7 @@ namespace Viber.Bot.NetCore.Models
             /// Max API version, matching the most updated user’s device.
             /// </summary>
             [JsonProperty("api_version")]
-            public double ApiVersion { get; set; }
+            public double? ApiVersion { get; set; }
 		}
 
 	}
