@@ -3,12 +3,26 @@ using Viber.Bot.NetCore.Infrastructure;
 
 namespace Viber.Bot.NetCore.Models
 {
-    public abstract class ViberApiResponseBase
+    public static class ViberResponse
     {
-		[JsonProperty("status")]
-        public ViberErrorCode Status { get; set; }
+        public abstract class ViberApiResponseBase
+        {
+            [JsonProperty("status")]
+            public ViberErrorCode Status { get; set; }
 
-        [JsonProperty("status_message")]
-        public string StatusMessage { get; set; }
-	}
+            [JsonProperty("status_message")]
+            public string StatusMessage { get; set; }
+        }
+
+        public class SendMessageResponse: ViberApiResponseBase
+        {
+            /// <summary>
+            /// Unique id of the message.
+            /// </summary>
+            [JsonProperty("message_token")]
+            public long MessageToken { get; set; }
+        }
+    }
+
+    
 }
