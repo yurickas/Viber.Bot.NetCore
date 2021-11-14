@@ -6,3 +6,5 @@
 /Viber.Bot.NetCore/obj
 /Viber.Bot.NetCore/bin
 /.vs/Viber.Bot.NetCore/DesignTimeBuild
+/.vs/slnx.sqlite
+*.json
